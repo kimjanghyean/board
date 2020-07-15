@@ -1,0 +1,38 @@
+{{>layout/header}}
+    <div class="container">
+        <div class="content">
+            <div class="content-item">
+                <div class="content-title">
+                    <h1>ABOUT</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        Donec pede justo, fringilla vel</p>
+                </div>
+                <div class="top-menu">
+                    <ul>
+                        <li>
+                            <button type="button">
+                                <a href="/about-edit"><i class="fas fa-edit"></i> 수정</a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-description">
+                    <div id="viewerSection"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{>layout/footer}}
+
+<script>
+    const viewer = new tui.Editor.factory({
+        el: document.querySelector('#viewerSection'),
+        viewer: true,
+        height: 'fit-content'
+    })
+    viewer.setValue(`{{{content}}}`);
+</script>
