@@ -1,3 +1,5 @@
+#원작자 : https://github.com/heumsi/springboot-sample-webpage
+
 # springboot-sample-webpage
 
 스프링 부트를 이용하여 간단한 웹 페이지를 만드는 예제입니다.
